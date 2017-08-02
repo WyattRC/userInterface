@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- you're going to use '{{}}' and loop over names to fill in the info -->
+
+<div class='wrapper'>
+{{#users}}
+<div class='users'>
+<a href="/{{username}}"><img src="{{avatar}}"/></a>
+  <h3>{{name}}</h3>
+  <p>{{job}} {{company}}</p>
+</div>
+{{/users}}
+</div>
+  </body>
+</html>
